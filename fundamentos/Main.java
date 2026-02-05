@@ -1,9 +1,10 @@
+package fundamentos;
 import java.util.Scanner;
 
 public class Main {
 
     //Constantes
-    String WELCOME_MESSAGE = "Olá, informe seu nome:"; //Pode ser passadi ao println
+    private final String WELCOME_MESSAGE = "Olá, informe seu nome:"; //Pode ser passado ao println.
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
