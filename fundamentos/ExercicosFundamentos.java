@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class ExercicosFundamentos {
     public static void main(String[] args){
-        /*1 - Escreva um código que receba o nome e o ano de nascimento de alguém e imprima na tela a seguinte mensagem "Olá 'Fulano' você tem 'X' anos"*/
+        /*1 - Escreva um código que receba o nome e o ano de nascimento de alguém e imprima na tela a seguinte mensagem "Olá 'Fulano' você tem 'X' anos"
         var baseYear = OffsetDateTime.now().getYear();
         var scanner = new Scanner(System.in);
         System.out.print("Digite seu nome: ");
         var name = scanner.next();
         System.out.print("Digite seu ano de nascimento: ");
         var year = scanner.nextInt();
-        System.out.printf("Olá %s, você tem %s anos!", name, (baseYear - year));
+        System.out.printf("Olá %s, você tem %s anos!", name, (baseYear - year));*/
         
 
         /* 2 - Escreva um código que receba o tamanho do lado de um quadrado, calcule sua área e exiba na tela (fórmula: área = base * altura).
