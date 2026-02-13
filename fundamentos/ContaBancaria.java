@@ -42,9 +42,9 @@ public class ContaBancaria {
     public void pagarBoleto(double boleto){
         if(boleto <= (saldo + chequeEspecial)){
             saldo = saldo - boleto;
-            if(saldo < 0){
-                chequeEspecial -= saldo;
-            }
+        }
+        else{
+            System.out.printf("Seu saldo é insuficiente.");
         }
     }
 
