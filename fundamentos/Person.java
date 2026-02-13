@@ -1,24 +1,26 @@
 package fundamentos;
 
+import java.time.OffsetDateTime;
+
 public class Person {
-    private String name;
-
+    private final String name;
     private int age;
-
-    public Person(String name){
+    private int lastYearAgeInc = OffsetDateTime.now().getYear();
+    public Person(String name, int age){
         this.name = name;
+        this.age = 1;
     }
-
-    public void setAge(int age){
-        this.age = age;
-    }
-
     public String getName(){
         return name;
     }
-
     public int getAge(){
         return age;
+    }
+    public void incAge(){
+        if(this.lastYearAgeInc >= OffsetDateTime.now().getYear()) return;
+
+        this.age += 1;
+        this.lastYearAgeInc = OffsetDateTime.now().getYear();
     }
 
 }

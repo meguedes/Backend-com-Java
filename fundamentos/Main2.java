@@ -1,21 +1,13 @@
 package fundamentos;
+
 import java.util.Scanner;
 
 public class Main2 {
+    public static void main(String [] args){
+        var person = new Person2("João");
 
-    //Constantes
-    private final String WELCOME_MESSAGE = "Olá, informe seu nome:"; //Pode ser passado ao println.
-
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
-        //outra forma: var scanner = new Scanner(System.in);
-        System.out.println("Olá, informe o seu nome:");
-        String name = scanner.next();
-        System.out.println("Informe sua idade:");
-        int age = scanner.nextInt();
-
-        System.out.println("Olá " + name + " sua idade é " + age + "\n");
-        //Outra forma: System.out.printf("Olá %s sua idade é %s\n", name, age);
-        
-    } 
+        System.out.println(person.getInfo());
+        System.out.println(person.name());
+    }
+    
 }
